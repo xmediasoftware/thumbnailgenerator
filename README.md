@@ -7,5 +7,5 @@ Here is a Sample from how to use
 
 	  if((isset($_FILES['new_picture']) && ($_FILES['new_picture']['tmp_name'] !=""))){
 	    /* create a thumbnail with max width: 200 pixels */
-  		$new_picture_name = UploadPictureRealSize($_FILES['new_picture'], "imgages/" false, 200);
+  		$new_picture_name = UploadPictureRealSize($_FILES['new_picture'], "thumbnail/" false, 200);
 	  }
