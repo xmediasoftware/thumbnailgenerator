@@ -136,6 +136,8 @@ function getWidthFromPicture($file_name_location){
 
 function UploadPictureTumbnail($posted_picture, $new_location, $overwrite, $img_thumb_width){
 	$file_name ="";
+	global $thumb_max_width_default;
+	global $msg_error_file_not_found;
 
 	if(substr($new_location,-1,1) != "/"){
 		$new_location += $new_location . "/";
